@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1 {
+            background-color: rgba(160, 160, 163, 0.568);
+
+            /* display: inline;
+            forma de deixar box-level em box-inline*/
+            height: 300px;
+            width: 300px;
+
+           /* border-width: 10px;
+            border-style: solid;
+            border-color: rgb(10, 44, 240);
+            código simplificado abaixo na ordem usando shorthand*/  
+            border: 10px solid rgb(10, 44, 240);
+
+            /* Ordem do padding
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; abaixo ordem simplificada usando shorthand */
+            padding: 10px;/*todos os lados 10px*/
+
+           
+           /* margin: auto; forma simples de centralizar a caixa */
+
+            /* Ordem margin
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            abaixo ordem simplificada usando shorthand*/
+            margin: 20px auto 40px auto;/* Se colocar direita e esquerda auto, centraliza a caixa */
+
+            /* Ordem outline
+            outline-width: 5px;
+            outline-style: dashed;
+            color: rgb(250, 6, 6);
+            abaixo ordem simplificada*/
+            outline: 5px dashed red;
+            
+        }
+
+        a { /* inline-box
+            ordem border
+            border-width: 10px;
+            border-style: solid;
+            color: rgb(4, 0, 255);
+            */
+           /* display: block;
+           Forma de deixar box-iline em box´level */
+            border: 10px solid red;
+            
+            /* Ordem simplificada usando shorthand*/ 
+        } 
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

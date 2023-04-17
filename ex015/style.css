@@ -1,0 +1,18 @@
+/*@charset "UTF-8" regra para acentuação. Sempre que tiver @ significa regra*/
+
+body {
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    color: darkblue;
+    background-color: greenyellow;
+}
+h2 {
+    color: red;
+}
+p {
+    text-align: justify;
+    
+}

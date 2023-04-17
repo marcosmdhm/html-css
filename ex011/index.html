@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumentre ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-pequena-maite.jpg" type="image/png"><!--Aqui adicionei a imagem pequena com maxima largura-->
+
+        <source media="(max-width: 1050px)" srcset="imagens/img-media-maite.jpg" type="image/png"><!--Aqui adicionei uma imagem média com maxima largura-->
+
+        <img src="imagens/img-grande-maite.jpg" alt="uma imagem grande"><!--Aqui adicionei uma imagem grande com maxima largura-->
+        <!--Sempre colocar na ordem as imagens-->
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <!--Midia dinamica para diferentes tamanho de telas-->
+    
+    <audio src="midia/frozem-love.mp3" controls ></audio><!--Aqui adicionei um audio, com os atributos "autoplay" que é para o audio tocar automaticamente e o atributo "controls" que é o controle de mídia para ser tocada. Para ter compatibilidade em todos os navegadores preciso de algumas formas diferentes como MP3, WAV, OGG-->
+    <audio preload="metadata" autoplay controls loop><!--Adicionado audio com alguns atributos como o loop que é ára reproduzir o audio-->
+        <source src="midia/frozem-love.mp3" type="audio/mpeg"><!-- Source src para tipo de arquivo ou musica MP3-->
+        <source src="midia/frozem-love.mp3" type="audio/ogg"><!-- Source src para aquivos do tipo ogg-->
+        <source src="midia/frozem-love.mp3" type="audio/wav"><!-- Source src para aquivos do tipo wav, evitar pois é arquivo muito grande-->
+
+        <p>Infelizmente o seu navegador não consegue reproduzir audio. <a href="midia/frozem-love.mp3">Aqui Clique aqui para baixar o arquivo Mp3</a></p>
+    </audio>
+    
+
+</body>
+</html>
