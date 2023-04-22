@@ -8,17 +8,25 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size:cover;
+            background-attachment: fixed;*/
+
+            /*Shorthand - background ordem:
+            color → image → position → repeat → [size] → attechment */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size:cover;
+            /* Size ainda não está funcionando ainda na ordem dentro da shorthand, coloquiei o background-size separado da shorthand*/
 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -31,6 +39,24 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam velit esse quo rem pariatur doloribus. Iste, cumque quasi quam labore vero laborum delectus porro quaerat ad! Ad tenetur nihil nobis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum inventore, nam qui adipisci eius fugit tempora? Corporis explicabo incidunt cum? Sequi est, et natus quam totam alias expedita officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto iure quod. Ratione quibusdam provident incidunt distinctio tenetur recusandae laboriosam, repellendus quam deserunt dicta obcaecati tempora ex aperiam eveniet quaerat?
+        </p>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam velit esse quo rem pariatur doloribus. Iste, cumque quasi quam labore vero laborum delectus porro quaerat ad! Ad tenetur nihil nobis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum inventore, nam qui adipisci eius fugit tempora? Corporis explicabo incidunt cum? Sequi est, et natus quam totam alias expedita officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto iure quod. Ratione quibusdam provident incidunt distinctio tenetur recusandae laboriosam, repellendus quam deserunt dicta obcaecati tempora ex aperiam eveniet quaerat?
+        </p>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam velit esse quo rem pariatur doloribus. Iste, cumque quasi quam labore vero laborum delectus porro quaerat ad! Ad tenetur nihil nobis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum inventore, nam qui adipisci eius fugit tempora? Corporis explicabo incidunt cum? Sequi est, et natus quam totam alias expedita officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto iure quod. Ratione quibusdam provident incidunt distinctio tenetur recusandae laboriosam, repellendus quam deserunt dicta obcaecati tempora ex aperiam eveniet quaerat?
+        </p>
+
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam velit esse quo rem pariatur doloribus. Iste, cumque quasi quam labore vero laborum delectus porro quaerat ad! Ad tenetur nihil nobis?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum inventore, nam qui adipisci eius fugit tempora? Corporis explicabo incidunt cum? Sequi est, et natus quam totam alias expedita officia!
