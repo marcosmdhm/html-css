@@ -1,22 +1,82 @@
 @charset "UTF-8";
 
 * {
-
+    margin: 0px;
+    padding: 0px;
+}
+/* Estilizando corpo do meu documento */
+html, body 
+{
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
-body {
-
-}
-
-header {
-    padding: 10px;
-    height: 150px;
-    width: 900px;
+/* Estilizando o cabeçalho do meu site */
+header 
+{
     background-color: black;
-}
-
-header h1 {
     color: white;
     text-align: center;
 }
 
+/* Estilizando o meu h1 dentro do cabeçalho */
+header > h1 
+{
+   padding-top: 50px; 
+   font-variant: small-caps;/* Letras maiusculas */
+}
+
+/* Estilizando o paragrafo dentro do meu cabeçalho */
+header > p 
+{
+    padding-bottom: 50px;
+}
+
+/* Estilizando link */
+header a, footer a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Estilizando link com efeito hover*/
+header a:hover, footer a:hover 
+{
+    text-decoration: underline;
+}
+
+/* Configurando section para fazer efeito parallax */
+section
+{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/* Espaço entre linhas */
+    padding-left: 30px;
+}
+
+section.normal
+{
+    background-color: white;
+    color: black;
+}
+
+section.img
+{
+    background-color: rgba(22, 21, 21, 0.726);
+    color: white;
+}
+
+section.img > p
+{
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 400px;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;/* Centralizar texto */
+    padding: 10px;
+} 
