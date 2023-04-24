@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+
+}
+
+body {
+
+}
+
+header {
+    padding: 10px;
+    height: 150px;
+    width: 900px;
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
