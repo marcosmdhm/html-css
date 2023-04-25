@@ -67,9 +67,15 @@ section
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;/* Espaço altura entre linhas da fonte */
-    padding-left: 30px;
+    padding: 20px;
     font-family: var(--fonte3);
     font-size: 2em;
+}
+
+/* Estilo paragrafo dentro da section */
+section > p
+{
+    padding-bottom: 3em;
 }
 
 section.normal
@@ -80,15 +86,35 @@ section.normal
 
 section.img
 {
-    background-color: rgba(22, 21, 21, 0.726);
+    background-color: rgba(22, 21, 21, 0.774);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.img > p
 {
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     display: inline-block;
+    box-shadow: 1px 1px 0px black;
+    
+}
+
+/* Imagem 02 do efeito parallax */
+section#img01
+{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+/* Imagem 02 do efeito Parallax*/
+section#img02
+{
+    background-image: url('imagens/background002.jpg');
+    
+    
 }
 
 footer
