@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+
+    <style>
+        /* Caso tenha estilo css o que manda é as css */
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- É um Frame inline quadros em linhas -->
     <h1>Testando uso de iframe</h1>
     <p>
         Acessando o site do
 
-       <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px">
+
+        </iframe>
 
         para aprender programa
     </p>
 
     <p>
-        O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> ushauhsauhsa
+        O repositório do guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500px">
+            <!-- Caso o navegador ou browser não fot compativel, irá aparecer este link na tela no lugar do iframe -->
+        <a href="https://gustavoguanabara.github.io" target="_blank">Repositório</a>
+        </iframe>
     </p>
 </body>
+
 </html>
